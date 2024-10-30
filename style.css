@@ -1,0 +1,243 @@
+.app_body {
+    background-color: black;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  
+  .square {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .square span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(#6b72ff00 50%, #f212cd6f 40%);
+    box-shadow: 0 0 50px rgb(255, 0, 255), inset 0 0 40px rgb(255, 0, 255);
+    border-radius: 38% 52% 53% 37% / 41% 44% 57% 55%;
+    transition: 0.7s;
+    animation: animate1 7s linear infinite;
+  }
+  
+  
+  @keyframes animate1 {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+ 
+
+  /* Input Field Start */
+  #TextInput {
+    background: #1e1e1e;
+    /* Dark background for contrast */
+    border: 2px solid transparent;
+    border-radius: 77px;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 10 10%;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.4s, box-shadow 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  
+  .input-field {
+    background: transparent;
+    border: none;
+    width: 80%;
+    outline: none;
+    color: white;
+    font-size: inherit;
+  
+  }
+
+  #animatedText{
+    font-size: 40px;
+    font-weight: 100;
+    opacity: 90%;
+  }
+
+.algobot{
+    color: #de10de;
+    font-weight: 700;
+    font-size: 70px;
+    
+  }
+
+
+  #chatbox{
+    
+    font-size: 20px;
+    opacity: 20%;
+    font-weight: 300;
+  }
+  
+  /* Neon Button */
+  .glow-on-hover {
+    width: 50px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: #1e1e1e;
+    /* Dark background */
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    border-radius: 50%;
+    margin-left: 10px;
+    overflow: hidden;
+    transition: transform 0.2s, background 0.2s;
+    color: #5e3d60;
+    background-color: rgba(10, 4, 17, 0.2);
+  }
+  
+  .glow-on-hover:hover {
+    transform: scale(1.2);
+    color: white;
+  }
+  
+  .glow-on-hover::before {
+    content: '';
+    background: linear-gradient(45deg, #e01616, #de10de, #9707ea, #7a00ff, #7212d8d0, #ff00ff, #e705d4, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  .glow-on-hover:hover::before {
+    opacity: 0.9;
+    /* Increase glow on hover */
+  }
+  
+  .glow-on-hover:active {
+    background: #00ffcc;
+    /* Neon green on active */
+    transform: scale(0.95);
+  }
+  
+  
+  @keyframes glowing {
+    0% {
+      background-position: 0 0;
+    }
+  
+    50% {
+      background-position: 500% 0;
+    }
+  
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  /* Input Field End */
+
+
+#siri-container{
+    position: relative;
+    bottom: 40px;
+    height: 0;
+    width: full;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.d-flex{
+    position: relative;
+    bottom: 70px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.text{
+    position: relative;
+    bottom: 50px;
+    font-size: 24px;
+    
+}
+
+.hidden{
+    display: none;
+}
+
+
+
+.ml5 {
+    position: relative;
+    bottom: 57px;
+    font-weight: 300;
+    font-size: 2.5em;
+    color:#de10de
+  }
+  
+  .ml5 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+    line-height: 1em;
+  }
+  
+  .ml5 .line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 3px;
+    width: 100%;
+    background-color:#e705d4;
+    transform-origin: 0.5 0;
+  }
+  
+  .ml5 .ampersand {
+    font-family: Baskerville, serif;
+    font-style: italic;
+    font-weight: 400;
+    width: 1em;
+    margin-right: -0.1em;
+    margin-left: -0.1em;
+  }
+  
+  .ml5 .letters {
+    display: inline-block;
+    opacity: 0;
+  }
+
+  .letters-left{
+ color: white;
+
+  }
+  
+  
